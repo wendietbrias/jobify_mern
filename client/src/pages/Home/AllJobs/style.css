@@ -1,0 +1,193 @@
+.alljobs-container {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.alljobs-form {
+  background-color: #fff;
+  padding: 1.8rem 1.8rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-2);
+  transition: 0.3s ease;
+}
+
+.alljobs-form:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.alljobs-form h3 {
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+.alljobs-form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  row-gap: 8px;
+  column-gap: 14px;
+  margin: 20px 0 0;
+  align-items: flex-end;
+}
+
+.clear-filters {
+  border: none;
+  padding: 0.6rem 0;
+  border-radius: 4px;
+  box-shadow: var(--shadow-1);
+  background-color: var(--red-light);
+  color: var(--red-dark);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.filter-btn {
+  border: none;
+  padding: 0.6rem 0;
+  border-radius: 4px;
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.no-data {
+  margin: 40px 0 0;
+}
+
+.no-data h2 {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.jobs-data {
+  width: 100%;
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+  gap: 20px;
+}
+
+.job-item {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: var(--shadow-2);
+}
+
+.company-information {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
+  padding: 1.2rem 1.5rem;
+}
+
+.company-information .initial {
+  background-color: var(--primary-600);
+  color: #fff;
+  margin-right: 25px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.company-information h4 {
+  color: var(--grey-700);
+  font-size: 1.2em;
+}
+
+.company-information h5 {
+  color: var(--grey-400);
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.main-information {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.4rem 1.8rem;
+}
+
+.main-information span {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  margin: 12px 0 10px;
+}
+
+.main-information span h5 {
+  font-weight: 600;
+  margin-left: 12px;
+  color: var(--grey-700);
+}
+
+.main-information button {
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  background: transparent;
+  font-weight: 600;
+  box-shadow: var(--shadow-2);
+  text-transform: uppercase;
+}
+
+.main-information button.pending {
+  background-color: rgb(252, 239, 199);
+  color: rgb(233, 185, 73);
+}
+
+.main-information button.interviews {
+  color: rgb(100, 122, 203);
+  background-color: rgb(224, 232, 249);
+}
+
+.main-information button.declined {
+  color: rgb(214, 106, 106);
+  background: rgb(255, 238, 238);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  padding: 0 1.8rem 1rem;
+}
+
+.btn-group button {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+}
+
+.btn-group .btn-edit {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  margin-right: 8px;
+}
+
+.btn-group .btn-delete {
+  background-color: var(--red-light);
+  color: var(--red-dark);
+}
+
+@media screen and (max-width: 560px) {
+  .alljobs-container {
+    padding: 3rem 1rem;
+  }
+
+  .alljobs-form {
+    padding: 1rem;
+  }
+
+  .alljobs-form form button {
+    margin: 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

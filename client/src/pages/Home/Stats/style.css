@@ -1,0 +1,79 @@
+.stats-container {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 14px;
+}
+
+.stats-card {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2rem 1.2rem;
+}
+
+.stats-card.pending {
+  border-bottom: solid 4px rgb(233, 185, 73);
+}
+
+.stats-card.interviews {
+  border-bottom: solid 4px rgb(100, 122, 203);
+}
+
+.stats-card.declined {
+  border-bottom: solid 4px rgb(214, 106, 106);
+}
+
+.top-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-stats.pending {
+  color: rgb(233, 185, 73);
+}
+
+.top-stats.interviews {
+  color: rgb(100, 122, 203);
+}
+
+.top-stats.declined {
+  color: rgb(214, 106, 106);
+}
+
+.icon {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.icon.pending {
+  background-color: rgb(252, 239, 199);
+}
+
+.icon.interviews {
+  background-color: rgb(224, 232, 249);
+}
+
+.icon.declined {
+  background: rgb(255, 238, 238);
+}
+
+.top-stats h2 {
+  font-size: 2.2em;
+}
+
+.stats-card h4 {
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--grey-800);
+  margin: 14px 0 0;
+}
+
+.charts {
+  width: 70%;
+  margin: 0 auto;
+}
